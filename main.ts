@@ -1,3 +1,6 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    serial.writeNumber(receivedNumber)
+})
 radio.setGroup(25)
 basic.forever(function () {
     music.playTone(131, music.beat(BeatFraction.Whole))
